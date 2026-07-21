@@ -15,7 +15,7 @@ import * as helper from "./helperFunctions.js";
 import * as data from "./data.js";
 
 // Generate card & event elements
-helper.cardGenerator(data.logos, "#logoCards", "logoCard wow fade-in-bottom");
+// helper.cardGenerator(data.logos, "#logoCards", "logoCard wow fade-in-bottom");
 helper.cardGenerator(
   data.WIFLImages,
   ".WIFLPics",

@@ -2,13 +2,20 @@ const template = document.createElement("template");
 
 template.innerHTML = `
   <style>
+    a[href] {
+      color: #447988;
+    }
+
     h3 {
-      color: var(--hhhColor);
-      font-family: "Latitude Regular";
-      font-size: var(--hhhFontSize);
+      color: #7a7416;
+      font-family: var(--hhhFontFamily);
+      font-size: 2rem;
+      font-weight: var(--hhFontWeight);
       font-variation-settings: var(--hhhVariationSettings);
+      line-height: calc(2rem * 1.5);
       margin-bottom: 3rem;
       position: relative;
+      letter-spacing: .25rem;
       z-index: 10;
     }
 
@@ -26,24 +33,10 @@ template.innerHTML = `
       line-height: var(--pLineHeight);
     }
 
-    @media all and (max-width: 1000px) {
-        h3 {
-          color: var(--hhhColor);
-          font-family: "Latitude Regular";
-          font-size: 2.5rem;
-          font-variation-settings: var(--hhhVariationSettings);
-          margin-bottom: 4rem;
-        }
-        p {
-          font-family: var(--pFontFamily);
-          font-weight: var(--pFontWeight);
-          font-size: 1rem;
-          line-height: 1.5rem;
-        }
-      }
-
     .slideContainer {
       background-color: var(--slideImageBG);
+      border-top: solid 1rem #C0B622;
+      box-shadow: -0px -20px 20px rgba(0,0,0,0.1), -0px -5px 10px rgba(0,0,0,0.1);
       color: var(--contentTextColor);
       width: 100vw;
       min-height: 100vh;
@@ -51,6 +44,7 @@ template.innerHTML = `
       align-items: center;
       flex-flow: column nowrap;
       padding-bottom: 5rem;
+      padding-top: 5rem;
     }
 
   </style>

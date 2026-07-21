@@ -20,19 +20,15 @@
     <meta name="theme-color" content="#fafafa" />
     <script src="./js/wow.min.js" type="text/javascript"></script>
     <script
-      language="javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js"
       type="text/javascript"
-      src="js/p5.min.js"
     ></script>
-    <script
-      language="javascript"
-      type="text/javascript"
-      src="js/flocking.js"
-    ></script>
-    <script type="module" src="./js/main.js"></script>
   </head>
 
   <body>
+    <div id="canvas-container">
+      <canvas id="canvas-particles"></canvas>
+    </div>
     <noscript>
       <p>
         This site requires Javascript to function. Please enable javascript!
@@ -56,17 +52,20 @@
       <section id="introduction">
         <slide-no-header background="none" class="fade-in-bottom titleslide">
           <div class="titleContainer">
-            <img class="titleSVG" src="./images/TCN_Secondary_Logo_RGB.svg" />
-            <h1 class="mainTitle"><br /><br />Year In Review | 2025</h1>
+            <!--
+            <img class="titleSVG" src="./images/TCN_Secondary_Logo_RGB.svg" /> -->
+            <h1 class="mainTitle">
+              The Chicago<br />Network Year in<br />Review, 2026
+            </h1>
           </div>
         </slide-no-header>
         <content-slide
-          title="Welcome from Deb Boyda and Francesca DeBiase "
+          title="Welcome from Dana Thompson and Julie Scott "
           class="wow fade-in-bottom"
           id="welcome"
         >
           <p>
-            Welcome to our 2024-2025 Year in Review! The Chicago Network is
+            Welcome to our 2025-2026 Year in Review! The Chicago Network is
             unlike any other organization in the country. We are a powerful
             community of senior women leaders, all dedicated to one purpose:
             empowering women to lead.<br /><br />One of our greatest strengths –
@@ -103,7 +102,7 @@
                 class="wow fade-in-bottom signature"
                 src="images/siggies/boyda_deb_signature.svg"
               />
-              <p>Deb Boyda<br /><em>Chair</em></p>
+              <p>Dana Thompson<br /><em>Chair</em></p>
             </div>
 
             <div class="signatureContainer">
@@ -115,7 +114,7 @@
                 class="wow fade-in-bottom signature"
                 src="images/siggies/Francesca_DeBiase_Signature.svg"
               />
-              <p>Francesca DeBiase<br /><em>Vice Chair</em></p>
+              <p>Julie Scott<br /><em>Vice Chair</em></p>
             </div>
           </div>
         </content-slide>
@@ -201,7 +200,7 @@
           <ul class="statsWrapper">
             <li data-wow-duration=".35s" class="wow fade-in-bottom stat">
               <div class="statCopy">
-                <div class="statNumber">37</div>
+                <div class="statNumber">27</div>
                 <div class="statInfo">Fortune 500 C-Suite Executives</div>
               </div>
             </li>
@@ -225,43 +224,37 @@
             </li>
             <li data-wow-duration=".35s" class="wow fade-in-bottom stat">
               <div class="statCopy">
-                <div class="statNumber">6</div>
+                <div class="statNumber">3</div>
                 <div class="statInfo">Current and Former Fortune 500 CEOs</div>
               </div>
             </li>
             <li data-wow-duration=".35s" class="wow fade-in-bottom stat">
               <div class="statCopy">
-                <div class="statNumber smallStat">47%</div>
-                <div class="statInfo">Crain's Women of Note</div>
+                <div class="statNumber smallStat">20%</div>
+                <div class="statInfo">Crain's Women of Influence</div>
               </div>
             </li>
             <li data-wow-duration=".35s" class="wow fade-in-bottom stat">
               <div class="statCopy">
-                <div class="statNumber smallStat">16%</div>
-                <div class="statInfo">Crain's Power 25 Chicagoans</div>
-              </div>
-            </li>
-            <li data-wow-duration=".35s" class="wow fade-in-bottom stat">
-              <div class="statCopy">
-                <div class="statNumber">11</div>
+                <div class="statNumber">6</div>
                 <div class="statInfo">University Presidents</div>
               </div>
             </li>
             <li data-wow-duration=".35s" class="wow fade-in-bottom stat">
               <div class="statCopy">
-                <div class="statNumber">24</div>
+                <div class="statNumber">22</div>
                 <div class="statInfo">Arts and Culture Trailblazers</div>
               </div>
             </li>
             <li data-wow-duration=".35s" class="wow fade-in-bottom stat">
               <div class="statCopy">
-                <div class="statNumber">55</div>
+                <div class="statNumber">63</div>
                 <div class="statInfo">Corporate C-Suite Executives</div>
               </div>
             </li>
             <li data-wow-duration=".35s" class="wow fade-in-bottom stat">
               <div class="statCopy">
-                <div class="statNumber">56</div>
+                <div class="statNumber">53</div>
                 <div class="statInfo">
                   CEOs and Entrepreneurs of Mid-Size Companies
                 </div>
@@ -275,37 +268,37 @@
             </li>
             <li data-wow-duration=".35s" class="wow fade-in-bottom stat">
               <div class="statCopy">
-                <div class="statNumber">6</div>
+                <div class="statNumber">8</div>
                 <div class="statInfo">Government Leaders</div>
               </div>
             </li>
             <li data-wow-duration=".35s" class="wow fade-in-bottom stat">
               <div class="statCopy">
-                <div class="statNumber">21</div>
+                <div class="statNumber">26</div>
                 <div class="statInfo">Healthcare Industry Executives</div>
               </div>
             </li>
             <li data-wow-duration=".35s" class="wow fade-in-bottom stat">
               <div class="statCopy">
-                <div class="statNumber">28</div>
+                <div class="statNumber">27</div>
                 <div class="statInfo">Higher Education Institution Leaders</div>
               </div>
             </li>
             <li data-wow-duration=".35s" class="wow fade-in-bottom stat">
               <div class="statCopy">
-                <div class="statNumber">42</div>
+                <div class="statNumber">44</div>
                 <div class="statInfo">Non-Profit Trailblazers</div>
               </div>
             </li>
             <li data-wow-duration=".35s" class="wow fade-in-bottom stat">
               <div class="statCopy">
-                <div class="statNumber">22</div>
+                <div class="statNumber">20</div>
                 <div class="statInfo">Media and Communications Executives</div>
               </div>
             </li>
             <li data-wow-duration=".35s" class="wow fade-in-bottom stat">
               <div class="statCopy">
-                <div class="statNumber">44</div>
+                <div class="statNumber">45</div>
                 <div class="statInfo">Law Industry Leaders</div>
               </div>
             </li>
@@ -316,249 +309,264 @@
           <div class="memberList wow fade-in-bottom">
             <p>
               <span class="member"
-                ><strong>Patricia L. Turner</strong><br /><span
+                ><strong>Mary Rose Alexander</strong><br /><span
                   class="memberdetails"
-                  >Executive Director & CEO, <br />American College of
-                  Surgeons</span
+                  >Office Managing Partner, Latham & Watkins LLP, <br />Latham &
+                  Watkins LLP</span
                 ></span
               ><br /><br />
               <span class="member"
-                ><strong>Amy Doehring</strong><br /><span class="memberdetails"
-                  >Deputy Co-Chair, Litigation Practice Group and Member of
-                  Board of Directors (former Office Managing Partner),
-                  <br />Akerman LLP</span
-                ></span
-              ><br /><br />
-              <span class="member"
-                ><strong>Joanna K. Horsnail</strong><br /><span
+                ><strong>Karina Ayala-Bermejo</strong><br /><span
                   class="memberdetails"
-                  >Office Managing Partner, <br />Mayer Brown LLP</span
+                  >President & CEO, <br />Instituto del Progreso Latino</span
                 ></span
               ><br /><br />
               <span class="member"
-                ><strong>Jennifer Kenedy</strong><br /><span
+                ><strong>Susan Booth</strong><br /><span class="memberdetails"
+                  >Artistic Director, <br />The Goodman Theatre</span
+                ></span
+              ><br /><br />
+              <span class="member"
+                ><strong>Nicola Boothe</strong><br /><span class="memberdetails"
+                  >Dean and Professor of Law, <br />University of Illinois
+                  Chicago School of Law</span
+                ></span
+              ><br /><br />
+              <span class="member"
+                ><strong>Karen Brennan</strong><br /><span class="memberdetails"
+                  >CEO, Leasing Advisory, <br />JLL</span
+                ></span
+              ><br /><br />
+              <span class="member"
+                ><strong>Lindsey Christen</strong><br /><span
                   class="memberdetails"
-                  >General Counsel, Executive Committee Member, Partner, <br />
-                  Locke Lord LLP</span
+                  >Chief Administrative and Legal Officer, Secretary,
+                  <br />Camping World Holdings, Inc.</span
                 ></span
               ><br /><br />
               <span class="member"
-                ><strong>Nancy Wright</strong><br /><span class="memberdetails"
-                  >CEO, <br />
-                  Girl Scouts of Greater Chicago & Northwest Indiana</span
-                ></span
-              ><br /><br />
-              <span class="member"
-                ><strong>Janet Malzone</strong><br /><span class="memberdetails"
-                  >National Managing Partner, Audit and Assurance Services,
-                  <br />Grant Thornton, LLP</span
-                ></span
-              ><br /><br />
-              <span class="member"
-                ><strong>Mary Ann Travers</strong><br /><span
+                ><strong>Kimberley Darey</strong><br /><span
                   class="memberdetails"
-                  >Partner (Crowe LLP) – Office Managing Partner (OMP) -
-                  Chicago/Oak Brook, <br />Crowe LLP</span
+                  >President - Endeavor Health Elmhurst Hospital and System
+                  Executive for Women and Children, <br />Endeavor Health</span
                 ></span
               ><br /><br />
               <span class="member"
-                ><strong>Dhuanne Dodrill</strong><br /><span
+                ><strong>Ashley Duchossois Joyce</strong><br /><span
                   class="memberdetails"
-                  >President & CEO, <br />PAXXUS, Inc.</span
+                  >Chairman, <br />Duchossois Capital Management, and The
+                  Duchossois Family Foundation</span
                 ></span
               ><br /><br />
               <span class="member"
-                ><strong>Jennifer Fritzsche</strong><br /><span
+                ><strong>Laurie Elish-Piper</strong><br /><span
                   class="memberdetails"
-                  >Managing Director; Co-Head Digital Infrastructure &
-                  Communication Services Practice, <br />Greenhill & Co.</span
+                  >Executive Vice President and Provost, <br />Northern Illinois
+                  University</span
                 ></span
               ><br /><br />
               <span class="member"
-                ><strong>Jessica Ashley Garmon</strong><br /><span
+                ><strong>W. Brooke Elliott</strong><br /><span
                   class="memberdetails"
-                  >Chief Operating Officer and Chief General Counsel, <br />The
-                  Will Group
-                </span></span
+                  >Dean, Gies College of Business, <br />University of Illinois
+                  at Urbana-Champaign</span
+                ></span
               ><br /><br />
               <span class="member"
-                ><strong>Eleanor Gorski</strong><br /><span
+                ><strong>Jessica Fairchild</strong><br /><span
                   class="memberdetails"
-                  >CEO & President, <br />Chicago Architecture Center</span
+                  >Founding Partner and President, <br />Croke Fairchild Duarte
+                  & Beres LLC.</span
                 ></span
               ><br /><br />
               <span class="member"
-                ><strong>Jeanne Jones</strong><br /><span class="memberdetails"
-                  >Executive Vice President and Chief Financial Officer,
-                  <br />Exelon Corporation</span
+                ><strong>Linda-Denise Fisher-Harrell</strong><br /><span
+                  class="memberdetails"
+                  >Artistic Director, <br />Hubbard Street Dance Chicago</span
                 ></span
               ><br /><br />
               <span class="member"
-                ><strong>Jenny Just</strong><br /><span class="memberdetails"
-                  >Co-Founder and Managing Partner, <br />PEAK6
-                  Investments</span
-                ></span
-              ><br /><br />
-              <span class="member"
-                ><strong>Jill Koski</strong><br /><span class="memberdetails"
-                  >President and CEO, <br />The Morton Arboretum</span
+                ><strong>Constance Freedman</strong><br /><span
+                  class="memberdetails"
+                  >Founder & Managing Partner, <br />Moderne Ventures</span
                 ></span
               ><br /><br />
             </p>
             <p>
               <span class="member"
-                ><strong>Lanesha Minnix</strong><br /><span
+                ><strong>Celia Gamrath</strong><br /><span class="memberdetails"
+                  >Illinois Appellate Court Justice, <br />Illinois Appellate
+                  Court</span
+                ></span
+              ><br /><br />
+              <span class="member"
+                ><strong>Kate Gebo</strong><br /><span class="memberdetails"
+                  >Executive Vice President Human Resources and Labor Relations,
+                  <br />United Airlines</span
+                ></span
+              ><br /><br />
+              <span class="member"
+                ><strong>Damla Gerhart</strong><br /><span class="memberdetails"
+                  >Executive Regional Director - Central, <br />Cushman &
+                  Wakefield</span
+                ></span
+              ><br /><br />
+              <span class="member"
+                ><strong>Nida Ghaffar</strong><br /><span class="memberdetails"
+                  >Office Managing Partner, <br />Husch Blackwell LLP</span
+                ></span
+              ><br /><br />
+              <span class="member"
+                ><strong>Emily Groden</strong><br /><span class="memberdetails"
+                  >Founder & CEO, <br />Evergreen</span
+                ></span
+              ><br /><br />
+              <span class="member"
+                ><strong>Cassandra Hill</strong><br /><span
                   class="memberdetails"
-                  >Executive Vice President and Global Chief Legal Officer,
-                  <br />Walgreens Boots Alliance</span
+                  >Dean and Professor of Law, <br />Northern Illinois University
+                  College of Law</span
                 ></span
               ><br /><br />
               <span class="member"
-                ><strong>Tara Montgomery</strong><br /><span
+                ><strong>Utopia Hill</strong><br /><span class="memberdetails"
+                  >CEO & President, <br />Reactivate [An Invenergy
+                  Company]</span
+                ></span
+              ><br /><br />
+              <span class="member"
+                ><strong>Heather Hunt-Ruddy</strong><br /><span
                   class="memberdetails"
-                  >Executive Vice President, Executive Producer, <br />Harpo
-                  Productions</span
+                  >Divisional President, Senior Managing Director, <br />Wells
+                  Fargo Advisors</span
                 ></span
               ><br /><br />
               <span class="member"
-                ><strong>Kimberly Motes</strong><br /><span
+                ><strong>Lynn Jekkals</strong><br /><span class="memberdetails"
+                  >Midwest Region Leader, <br />Aon</span
+                ></span
+              ><br /><br />
+              <span class="member"
+                ><strong>Rana Jewel Wright</strong><br /><span
                   class="memberdetails"
-                  >Executive Director, <br />Chicago Shakespeare Theater</span
+                  >President, Oakmark Funds, <br />Harris Associates</span
                 ></span
               ><br /><br />
               <span class="member"
-                ><strong>Dara Munson</strong><br /><span class="memberdetails"
-                  >President and CEO, <br />Family Focus</span
+                ><strong>Monique Jones</strong><br /><span class="memberdetails"
+                  >President & CEO, <br />Forefront</span
                 ></span
               ><br /><br />
               <span class="member"
-                ><strong>Jayne Rosefield</strong><br /><span
+                ><strong>Michelle Kuhr</strong><br /><span class="memberdetails"
+                  >Senior Managing Director, Chicago Market Leader,
+                  <br />Riveron</span
+                ></span
+              ><br /><br />
+              <span class="member"
+                ><strong>Amy Lawless</strong><br /><span class="memberdetails"
+                  >Founder and Co-Owner, <br />The Dearborn</span
+                ></span
+              ><br /><br />
+              <span class="member"
+                ><strong>Clodagh Lawless</strong><br /><span
                   class="memberdetails"
-                  >Senior Partner, Global Consumer Industries Lead and Chicago
-                  Office Head, <br />Brunswick Group</span
-                ></span
-              ><br /><br />
-              <span class="member"
-                ><strong>Kate Van Zeyl</strong><br /><span class="memberdetails"
-                  >Vice President, General Manager, <br />Turner Construction
-                  Company</span
-                ></span
-              ><br /><br />
-              <span class="member"
-                ><strong>Gina Weldy</strong><br /><span class="memberdetails"
-                  >Senior Vice President, Administration, <br />Northwestern
-                  Memorial HealthCare
-                </span></span
-              ><br /><br />
-              <span class="member"
-                ><strong>Wendy Berger</strong><br /><span class="memberdetails">
-                  CEO and Founder, <br />WBS Equities, LLC</span
-                ></span
-              ><br /><br />
-              <span class="member"
-                ><strong>Kathleen St. Louis Caliento</strong><br /><span
-                  class="memberdetails"
-                  >President & CEO, <br />Cara Collective</span
-                ></span
-              ><br /><br />
-              <span class="member"
-                ><strong>Emily Chase</strong><br /><span class="memberdetails"
-                  >Chief Operating Officer, <br />UChicago Medicine</span
-                ></span
-              ><br /><br />
-              <span class="member"
-                ><strong>Rebecca Fyffe</strong><br /><span class="memberdetails"
-                  >Director of Research, President, <br />
-                  Landmark Pest Management</span
-                ></span
-              ><br /><br />
-              <span class="member"
-                ><strong>Virxhini Gjonzeneli</strong><br /><span
-                  class="memberdetails"
-                  >Chief Financial Officer, <br />
-                  Federal Home Loan Bank of Chicago</span
-                ></span
-              ><br /><br />
-              <span class="member"
-                ><strong>Maggie O'Brien</strong><br /><span
-                  class="memberdetails"
-                  >Co-Head of Illinois, Iowa and Nebraska – J.P. Morgan Private
-                  Bank, <br />JPMorgan Chase</span
-                ></span
-              ><br /><br />
-              <span class="member"
-                ><strong>Laura Stein</strong><br /><span class="memberdetails"
-                  >EVP, Corporate & Legal Affairs, General Counsel and Corporate
-                  Secretary, <br />Mondelez International
-                </span></span
-              ><br /><br />
-              <span class="member"
-                ><strong>Sarah Stephens</strong><br /><span
-                  class="memberdetails"
-                  >Managing Director, Central Zone Leader, <br />Marsh</span
+                  >Founder and Co-Owner, <br />The Dearborn</span
                 ></span
               ><br /><br />
             </p>
             <p>
               <span class="member"
-                ><strong>Jacqueline Barlow</strong><br /><span
+                ><strong>Marianne Markowitz</strong><br /><span
                   class="memberdetails"
-                  >President, US Commercial Real Estate, <br />CIBC Bank
-                  USA</span
+                  >President & CEO, <br />First Women's Bank</span
                 ></span
               ><br /><br />
               <span class="member"
-                ><strong>Liz Buchanan</strong><br /><span class="memberdetails"
-                  >President, North America, <br />NielsenIQ (NIQ)</span
+                ><strong>Molly McShane</strong><br /><span class="memberdetails"
+                  >CEO, <br />The McShane Companies</span
                 ></span
               ><br /><br />
               <span class="member"
-                ><strong>Jennifer Deason</strong><br /><span
+                ><strong>Sarah Miller</strong><br /><span class="memberdetails"
+                  >Partner, Chicago Audit Leader, <br />Ernst & Young LLP</span
+                ></span
+              ><br /><br />
+              <span class="member"
+                ><strong>Annette Nance-Holt</strong><br /><span
                   class="memberdetails"
-                  >Former CEO, <br />Home Partners of America</span
+                  >Fire Commissioner, <br />Chicago Fire Department</span
                 ></span
               ><br /><br />
               <span class="member"
-                ><strong>Sharon Hwang</strong><br /><span class="memberdetails"
-                  >Shareholder & Executive Committee Member, <br />McAndrews,
-                  Held & Malloy, Ltd.</span
-                ></span
-              ><br /><br />
-              <span class="member"
-                ><strong>Lisa Key</strong><br /><span class="memberdetails"
-                  >Executive Director, <br />Driehaus Museum</span
-                ></span
-              ><br /><br />
-              <span class="member"
-                ><strong>Nadya Mason</strong><br /><span class="memberdetails"
-                  >Robert J. Zimmer Professor and Dean of the Pritzker School of
-                  Molecular Engineering, <br />
-                  University of Chicago</span
-                ></span
-              ><br /><br />
-              <span class="member"
-                ><strong>Patricia O'Neil</strong><br /><span
+                ><strong>Jennifer Neumann</strong><br /><span
                   class="memberdetails"
-                  >Senior Vice President & System CFO, <br />Rush University
-                  System for Health</span
+                  >CEO, <br />BBDO Chicago</span
                 ></span
               ><br /><br />
               <span class="member"
-                ><strong>Dinee Simpson</strong><br /><span class="memberdetails"
-                  >Chief Health Equity Executive, Associate Professor of Surgery
-                  (Transplant), <br />Northwestern Medicine, Northwestern
-                  University Feinberg School of Medicine</span
+                ><strong>Meghan Otis</strong><br /><span class="memberdetails"
+                  >Co-Founder and Partner, <br />Lightspring Capital
+                  Partners</span
                 ></span
               ><br /><br />
               <span class="member"
-                ><strong>Gretchen Crosby Sims</strong><br /><span
+                ><strong>Nancy Paridy</strong><br /><span class="memberdetails"
+                  >President, Chief Administrative Officer & General Counsel,
+                  <br />Shirley Ryan AbilityLab</span
+                ></span
+              ><br /><br />
+              <span class="member"
+                ><strong>Jamie Redmond</strong><br /><span class="memberdetails"
+                  >Partner & COO, <br />Redmond</span
+                ></span
+              ><br /><br />
+              <span class="member"
+                ><strong>Beth Satterfield</strong><br /><span
                   class="memberdetails"
-                  >Director, <br />Hakluyt & Co</span
+                  >Chief Operating Officer, <br />William Blair</span
                 ></span
               ><br /><br />
               <span class="member"
-                ><strong>Rolla Sweis</strong><br /><span class="memberdetails"
-                  >President & CEO, <br />La Rabida Children’s Hospital</span
+                ><strong>Meghan Schultz</strong><br /><span
+                  class="memberdetails"
+                  >Executive Vice President & Chief Financial Officer,
+                  <br />Invenergy LLC</span
+                ></span
+              ><br /><br />
+              <span class="member"
+                ><strong>Balika Sonthalia</strong><br /><span
+                  class="memberdetails"
+                  >Partner, <br />Kearney Inc.</span
+                ></span
+              ><br /><br />
+              <span class="member"
+                ><strong>Katie Spring</strong><br /><span class="memberdetails"
+                  >U.S. President, <br />Edelman Smithfield</span
+                ></span
+              ><br /><br />
+              <span class="member"
+                ><strong>Regina Stilp</strong><br /><span class="memberdetails"
+                  >Founding Principal, <br />Farpoint Development</span
+                ></span
+              ><br /><br />
+              <span class="member"
+                ><strong>Carole Streicher</strong><br /><span
+                  class="memberdetails"
+                  >Partner, National Service Group Leader | Deal Advisory &
+                  Strategy, <br />KPMG</span
+                ></span
+              ><br /><br />
+              <span class="member"
+                ><strong>Kathleen Sweitzer</strong><br /><span
+                  class="memberdetails"
+                  >Senior Vice President, General Counsel and Corporate
+                  Secretary, <br />Trustmark Companies</span
+                ></span
+              ><br /><br />
+              <span class="member"
+                ><strong>Laura Zumdahl</strong><br /><span class="memberdetails"
+                  >President & CEO, <br />New Moms</span
                 ></span
               ><br /><br />
             </p>
@@ -642,7 +650,7 @@
         </transition-slide>
         <content-slide
           title="Women in the Forefront Luncheon Celebration"
-          spiel="This year’s Women in the Forefront Luncheon was nothing short of spectacular!  The atmosphere was absolutely electric as we welcomed our keynote speaker, the phenomenal Cady Coleman, a former NASA Astronaut and a retired U.S. Air Force Colonel, who captivated us with her incredible leadership journey which included spending over 180 days in space!  The energy soared as she sat down with the dynamic Michelle Miller, co-host of CBS Saturday Morning, for a conversation that left everyone inspired and empowered.  We were absolutely thrilled to have hometown CBS News Chicago anchor Maria Saavedra, grace the stage as our lively emcee. The room was packed with nearly 1,500 in-person attendees, and the excitement extended to over 200 virtual participants tuning in from across the globe.  And let’s not forget our over 125 sponsors who helped make this event a truly unforgettable celebration of women in leadership.  The energy was contagious, the stories were awe-inspiring, and the sense of community was stronger than ever – we can’t wait to see what next year brings!"
+          spiel="This year's Women in the Forefront Luncheon was nothing short of extraordinary!<br /><br />The program began with a moving flag ceremony presented by the Girl Scouts of Greater Chicago and Northwest Indiana, setting an inspiring tone and creating a powerful sense of unity and purpose throughout the room. That energy carried us into a remarkable keynote conversation featuring the Honorable Secretary of State Hillary Rodham Clinton, Jeanne Gang, Founding Partner, Studio Gang and Ann Drake, Chair and President, Women’s Leadership Center at Williams Bay.  Together, these visionary leaders shared thoughtful reflections on leadership, legacy, and the transformative institutions they are building through their collaboration with Studio Gang. Their candid insights, compelling stories, and bold vision for the future captivated the audience from beginning to end.<br /><br />The excitement was palpable as nearly 1,500 guests filled the ballroom, while more than 200 virtual attendees joined us from around the world. This unforgettable celebration of women's leadership was made possible by the incredible support of our 124 sponsors, whose commitment helped bring this inspiring event to life.<br /><br />From the electric atmosphere and thought-provoking conversation to the meaningful connections made throughout the day, this year's luncheon reminded us of the extraordinary impact women have when they lead, collaborate, and lift one another up. We are deeply grateful to everyone who joined us and helped make this one of our most memorable Women in the Forefront Luncheons yet. We can't wait to see what we'll accomplish together next year!"
         >
           <div class="WIFLPics" slot="outer"></div>
         </content-slide>
@@ -824,32 +832,9 @@
         </transition-slide>
         <content-slide
           title="Launchpad"
-          spiel="The Chicago Network’s Launchpad Women’s Leadership Summit brought together 200 participants and eleven key sponsors at the University Club of Chicago in September.  Since its inception in 2014, Launchpad has established itself as a key platform for emerging women leaders to take charge of their own professional development.  The summit emphasizes the importance of women owning their growth by providing high-level content and actionable leadership tools designed to help women achieve their career objectives.<br />
-          Attendee feedback highlighted the Summit’s value and its impact:
-          <blockquote>“The topics were very relatable to my career and the people that I work with.  I was able to take something away from each of them.”</blockquote>
-          <blockquote>“Appreciated the mix of lecture and small group discussions at our table, it was the perfect balance, and the sessions were so engaging the time just flew by.”</blockquote>
-          <blockquote>“The quality of the people in the room.”</blockquote>
-          <blockquote>“It is great to have dedicated time to focus on leadership and discussion with other leaders.  It’s brainstorming and reflection that helps center you in the kind of professional you want to be, among the chaos of the day-to-day work.”</blockquote>
-          This year’s event showcased a dynamic lineup of speakers, including Carol Fitzgibbons, Director in the Leadership Acceleration Practice of Bravanti, Jackie Gnepp, Ph.D., President and Founding Partner, Humanly Possible, Inc, and Ellen Taaffe, Kellogg Professor, board director, and author, who shared their expertise and experiences. With a half-day of inspiring speakers, leadership development programs, and a networking luncheon, Launchpad is an invaluable opportunity for women to proactively recognize and develop their potential as future senior executive leaders."
+          spiel="The Chicago Network’s Launchpad Women’s Leadership Summit brought together 200 participants and eleven key sponsors at the Drake Hotel in September. Since its inception in 2014, Launchpad has established itself as a key platform for emerging women leaders to take charge of their own professional development. The summit emphasizes the importance of women owning their growth by providing high-level content and actionable leadership tools designed to help women achieve their career objectives.<br /><br />Attendee feedback highlighted the Summit’s value and its impact:<ul><li>“Great use of time and technology; good combination of input/content from speakers and hands-on activities, plus networking!”</li><li>“Such incredible professional speakers, I can’t get this development in many places! Start/end time of Summit was genius and perfect!”</li><li>“Great to see Launchpad for the first time as a TCN Board Member. It might be interesting for all Board Members to experience Launchpad at least once during a given term. Participants at my table were clamoring for more opportunities like Launchpad inside of one year!”</li><li>“Dynamic speakers, good opportunities to network and meet people from diverse professions.”</li><li>“Initial session removed any reservations, or intimidation people may have felt regarding attending an event full of C-suite and senior level professionals. Creating a welcoming and collaborative environment.”</li><li>“The balance of programming and networking opportunities. I was surprised how much I took away from the AI session and the fantastic connections I made at the event related to the comment I made during that session!”</li><li>“I will immediately apply my learning from the sessions on Power, Confidence, and AI.”</li></ul><br />This year’s event showcased a dynamic lineup of speakers, including Julie Johnson, Managing Director, zrg/Bravanti, Nerissa Brown, Executive Associate Director Dean of Academic Programs and Ari Garimella, Assistant Professor of Information Systems, Gies College of Business, Susan Burns, Senior Partner – Board & CEO Practice, Spencer Stuart, Cheryl A. Francis, Co-Founder and Co-Chairman Corporate Leadership Center, Allison Ranney, Managing Director, Russell Reynolds Associates, and Diane Primo, CEO, Purpose Brand, who shared their expertise and experiences. With almost a full day of inspiring speakers, leadership development programs, and networking luncheon and reception. Launchpad is an invaluable opportunity for women to proactively recognize and develop their potential as future senior executive leaders. We already have our speakers line-up ready for September 2026!"
         >
           <div class="launchpadPics" slot="outer"></div>
-        </content-slide>
-      </section>
-
-      <section id="equityPrinciples">
-        <transition-slide
-          title=""
-          background="linear-gradient(#48a7a7, #9198e5)"
-          class="wow fade-in-bottom"
-          image="./images/interstitial/5.webp"
-        >
-        </transition-slide>
-        <content-slide
-          title="Broader Influence and Advocacy with Equity Principles"
-          spiel="The Chicago Network is proud to collaborate with our partners in the Equity Principles campaign to advance gender equity in leadership and support the continued growth of women leaders.  Ensuring progress toward an equitable workplace, while being mindful of the broader climate, is more important than ever. It is well-documented that having women at the table in senior executive roles greatly contributed to organizational success, whether in profitability, innovation, or the long-term sustainability of values-based leadership.  Our commitment to gender equity aligns us with the globally recognized benchmark set by the United Nations’ Sustainable Development Goals and the efforts of many organizations across sectors and borders."
-          class="wow fade-in-bottom"
-        >
-          <div slot="outer" class="objectField" id="logoCards"></div>
         </content-slide>
       </section>
 
@@ -863,7 +848,7 @@
         </transition-slide>
         <content-slide
           title="Annual Meeting"
-          spiel="Our Annual Meeting was held this year at The Ivy Room, where members elected a new slate of directors and celebrated the spirit of our community. We were honored to welcome our new Board Chair, Francesca DeBiase, and to hear thoughtful reflections from our outgoing Board Chair, Deb Boyda.  Francesca also shared her vision and insights for the future of the organization, inspiring enthusiasm for the year ahead.  The evening was a wonderful opportunity to celebrate friendships and enjoy meaningful conversations over delicious food and wine."
+          spiel="Our Annual Meeting was held this year at the Arts Club of Chicago, where members elected a new slate of directors and celebrated the spirit of our community. We were honored to welcome our new Board Chair, Dana Thomspon, and to hear thoughtful reflections from our outgoing Board Chair, Francesca DeBiase. Dana also shared her vision and insights for the future of the organization, inspiring enthusiasm for the year ahead. The evening was a wonderful opportunity to celebrate friendships and enjoy meaningful conversations over delicious food and wine."
           class="wow fade-in-bottom"
         >
           <div class="AMPics" slot="outer"></div>
@@ -898,7 +883,7 @@
             programs not only offer members an insider’s perspective on some of
             Chicago’s most respected organizations but also create powerful
             forums for connection with other accomplished women.<br /><br />This
-            past year alone, we proudly hosted over 55 engaging programs, each
+            past year alone, we proudly hosted over 50 engaging programs, each
             meticulously designed to inspire, educate, and elevate our members.
             We are thrilled to share that our members consistently rate The
             Chicago Network’s programs an impressive 4.9 out of 5, reflecting
@@ -925,13 +910,11 @@
           <div class="memberList wow fade-in-bottom">
             <p>
               <strong>Executive Committee</strong><br />
-              Deb Boyda, Chair<br />
-              Francesca DeBiase, Vice Chair<br />
-              Suzet McKinney, Immediate Past Chair/Nominating Committee Chair<br />
-              Tracey Benford, Treasurer<br />
-              Linda Imonti<br />
-              Dana Thompson<br />
-              Anna May Trala<br />
+              Francesca DeBiase, Chair<br />
+              Dana Thompson, Vice Chair<br />
+              Tracey Benford<br />
+              Deb Boyda<br />
+              Julie Scott<br />
               <br />
               <strong>Finance and Audit Committee </strong><br />
               Tracey Benford, Chair<br />
@@ -944,31 +927,26 @@
               <strong>Governance Committee</strong><br />
               Marsha Cruzan, Chair<br />
               Christina Corley<br />
-              Z Scott<br />
+              Zaldwaynaka ("Z") Scott<br />
               <br />
               <strong>Membership Committee</strong><br />
-              Janet Foutty, Chair<br />
-              Cathy Birkeland, Chair, Law Membership Subcommittee<br />
-              Jean Franczyk, Chair, Arts and Culture Membership Subcommittee<br />
-              Natasha Galavotti, Chair, Corporate Membership Subcommittee<br />
-              Erin Inman, Chair, Mid-Size Private Companies Membership
-              Subcommittee<br />
-              Janice Jackson, Chair, Government Membership Subcommittee<br />
-              Janet Mentzinger, Chair, Nonprofit Membership Subcommittee<br />
-              Susan Poser, Chair, Higher Education Membership Subcommittee<br />
-              Kathy Scherer, Chair, Professional Services and Associations
-              Membership Subcommittee<br />
-              Alison Scholly, Chair, Media and Communications Membership
-              Subcommittee<br />
-              Dana Thompson, Chair, Health, Science, and Medicine Membership
-              Subcommittee<br />
-              Julie Vander Weele, Chair, Financial Services Membership
-              Subcommittee<br />
+              Julie Scott, Chair<br />
+              Cathy Birkeland<br />
+              Lucy Brady<br />
+              Jean Franczyk<br />
+              Beth Harris<br />
+              Erin Inman<br />
+              Janice Jackson<br />
+              Jane Mentzinger<br />
+              Kathy Scherer<br />
+              Alison Scholly<br />
+              Julie Vander Weele<br />
+              Kathleen Yosko<br />
               <br />
               <strong>Communications Committee</strong><br />
-              Susan Jacobs, Chair<br />
-              Gayla Brockman<br />
+              Jennifer Lyons, Chair<br />
               Yvonne Franzese<br />
+              Susan Jacobs<br />
               Lindsay Jenkins<br />
               Kary McILwain<br />
               Diane Pearse<br />
@@ -976,43 +954,39 @@
               Jill Smart<br />
               Maxine Winer<br />
               <br />
-              <strong>Emerita Committee</strong><br />
-              Anna Rappaport, Chair<br />
-              Regine Corrado<br />
-              Marilyn Kelly<br />
-              Barbara Provus<br />
-              Libbett Richter<br />
-              Toni Smith<br />
-              <br />
               <strong>Launchpad Committee</strong><br />
-              Yonhee Gordon, Chair<br />
+              Yonhee Choi Gordon, Chair<br />
+              Aarti Dhupelia<br />
               Karyn Esken<br />
               Susan Gallagher<br />
               Teresa Harmon<br />
-              Beka Kohmescher<br />
+              Rebekah Kohmescher<br />
               Tracie Morris<br />
               Anna Paglia<br />
               Maria Pesqueira<br />
-              Aurelie Richard<br />
               Heather Russell<br />
               Kathy Scherer<br />
+              Kathleen Sweitzer<br />
               <br />
               <strong>Programs & Engagement Committee</strong><br />
               Barbra Bukovac, Chair<br />
               Susan Abrams<br />
-              Caroline Becker Joss<br />
               Kathy Bolhous<br />
+              Kathleen Caliento<br />
+              Emily Chase<br />
               Elizabeth Coolidge<br />
               Angelique David<br />
               Karyn Esken<br />
               Brooke Flanagan<br />
-              Pamela Forbes Lieberman<br />
               Maricela Garcia<br />
               Sarah Guernsey<br />
-              Erin Inman<br />
+              Caroline Becker Joss<br />
+              Sujata K<br />
               Cathy Kenworthy<br />
               Katie Lawler<br />
+              Pamela Forbes Lieberman<br />
               Jill Nicholson<br />
+              Diane Primo<br />
               Jill Smart<br />
               Susan Stelter<br />
               Anna Valencia<br />
@@ -1023,16 +997,12 @@
             </p>
             <p>
               <strong>Women in the Forefront Luncheon Committee </strong><br />
-              Sidney Dillard, Co-Chair<br />
+              Natasha Galavotti, Co-Chair<br />
               Julie Scott, Co-Chair<br />
-              Kathy Bolhous<br />
               Katie Doyle<br />
-              Francee Harrington<br />
-              Joyce St. Clair<br />
-              Jill Smart<br />
+              Dee Merriwether<br />
               Terri Weaver<br />
               Yasmine Winkler<br />
-              Nancy Wright<br />
               Maria Wynne<br />
               Kathleen Yosko<br />
               <br />
@@ -1040,13 +1010,15 @@
               Sara Greenstein, Chair<br />
               Anne Alonzo<br />
               Deb Boyda<br />
+              Stephanie Braming<br />
               Suzanne Burns<br />
+              Kathleen Caliento<br />
               Ellen Carnahan<br />
-              Margo Cook<br />
               Sandya Dandamudi<br />
               Katie Doyle<br />
               Vicki Dudley<br />
               Christine Edwards<br />
+              Susan Gallagher<br />
               Sandra Helton<br />
               Mary Josephs<br />
               Virginia Kendall<br />
@@ -1060,9 +1032,9 @@
               Tierney Remick<br />
               Lois Scott<br />
               Denise Singleton<br />
+              Mary Smith<br />
               Laura Thonn<br />
               Anna May Trala<br />
-              Yasmine Winkler<br />
               Maria Zec<br />
               Ann Ziegler<br />
               <br />
@@ -1071,17 +1043,19 @@
               Jennifer Farrington<br />
               Sarah Guernsey<br />
               Perri Irmer<br />
+              Anna Rappaport<br />
               Megan Ross<br />
               <br />
               <strong>Corporate Membership Subcommittee</strong><br />
-              Natasha Galavotti, Chair<br />
+              Lucy Brady, Chair<br />
               Sue Bettman<br />
-              Lucy Brady<br />
+              Karen Case<br />
               Vicki Dudley<br />
               Therese Fauerbach<br />
+              Natasha Galavotti<br />
+              Susie Gallagher<br />
               Laura Gurski<br />
               Beth Kirk Malecki<br />
-              Marilyn Lissner<br />
               Terri McNally<br />
               Laurie O'Shea<br />
               Katie Rooney<br />
@@ -1092,7 +1066,9 @@
               <br />
               <strong>Financial Services Membership Subcommittee</strong><br />
               Julie Vander Weele, Chair<br />
+              Stephanie Braming<br />
               Elizabeth Browne<br />
+              Karen Case<br />
               Patrice DeCorrevont<br />
               Sidney Dillard<br />
               Mary Josephs<br />
@@ -1107,41 +1083,42 @@
               Janice Jackson, Chair<br />
               Melissa Bean<br />
               Kim Foxx<br />
-              Janice Jackson<br />
               Robin Kelly<br />
-              Jamie Rhee<br />
-              Z Scott<br />
               Lois Scott<br />
+              Zaldwaynaka ("Z") Scott<br />
               Juliana Stratton<br />
               Anna Valencia<br />
               <br />
               <strong>Health, Science & Medicine Subcommittee</strong><br />
-              Dana Thompson, Chair<br />
-              Verneda Bachus<br />
+              Kathleen Yosko, Chair<br />
               Jan Berger<br />
               Deborah Bowen<br />
+              Emily Chase<br />
+              Carla Robinson<br />
               Michelle Stephenson<br />
+              Patricia Turner<br />
+              Lisa Wagamon<br />
               Brenda Wolf<br />
-              Kathleen Yosko<br />
               <br />
             </p>
 
             <p>
               <strong>Higher Education Membership Subcommittee</strong><br />
-              Susan Poser, Chair<br />
+              Beth Harris, Chair<br />
               Aarti Dhupelia<br />
               Lisa Freeman<br />
-              Beth Harris<br />
               Elaine Maimon<br />
               Stephanie Marshall<br />
               Marilyn McCoy<br />
-              Susan Poser<br />
               Jennifer Rosato Perea<br />
+              Susan Poser<br />
               Rebecca Rugg<br />
+
               <br />
               <strong>Law Membership Subcommittee</strong><br />
               Cathy Birkeland, Chair<br />
               Aurora Austriaco<br />
+              Rebecca Weinstein Bacon<br />
               Mary Clare Bonaccorsi<br />
               Linda Coberly<br />
               Christine Edwards<br />
@@ -1157,7 +1134,6 @@
               Cathy O'Kelly<br />
               Kristen Prinz<br />
               Tina Tabacchi<br />
-              Rebecca Weinstein Bacon<br />
               Mary Wilson<br />
               <br />
               <strong>Media & Communications Membership Subcommittee</strong
@@ -1175,29 +1151,32 @@
               <br />
               <strong>Mid-Size Private Companies Membership Subcommittee</strong
               ><br />
-              Erin Iman, Chair<br />
-              Caroline Becker Joss<br />
+              Erin Inman, Chair<br />
               Rona Borre<br />
               Eileen Chin<br />
               Sandya Dandamudi<br />
               Alison Gutterman<br />
               Stephanie Hickman<br />
               Mary Josephs<br />
+              Caroline Becker Joss<br />
               Cheryl Lulias<br />
               Linda Maclachlan<br />
-              Laura Niemann<br />
+              Laura Nieman<br />
               Ellen Rudnick<br />
               Julie Scott<br />
               Donna Williamson<br />
               <br />
               <strong>Nonprofit Membership Subcommittee</strong><br />
-              Jane Mentzinger, Chair<br />
+              Janet Mentzinger, Chair<br />
               Heather Anichini<br />
               MarySue Barrett<br />
               Felicia Blakely<br />
+              Kathleen Caliento<br />
               Gillian Darlow<br />
               Aarti Dhupelia<br />
               Sol Flores<br />
+              Karen Freeman Wilson<br />
+              Jill Koski<br />
               Alison Ranney<br />
               Celena Sarillo<br />
               Rebekah Scheinfeld<br />
@@ -1210,9 +1189,7 @@
                 Subcommittee</strong
               ><br />
               Kathy Scherer, Chair<br />
-              Gina Berndt<br />
               Gila Bronner<br />
-              Lisa Johnson<br />
               Jackie Koo<br />
               Christine Laurens<br />
               Sharon Lindstrom<br />
@@ -1222,6 +1199,20 @@
               Julie Scott<br />
               Jill Smart<br />
               Laura Thonn<br />
+              <br />
+              <strong>The Rung</strong><br />
+              Suzet McKinney, Chair<br />
+              Wendy Berger<br />
+              Deb Boyda<br />
+              Christina Corley<br />
+              Yonhee Choi Gordon<br />
+              Kelly Graves<br />
+              Francee Harrington<br />
+              Laura Jozwiak<br />
+              Beka Kohmescher<br />
+              Norah Larke<br />
+              Mary Ann Travers<br />
+              Sona Wang<br />
             </p>
           </div>
         </content-slide>
@@ -1285,10 +1276,20 @@
         <content-slide
           title="Colophon and Thanks"
           class="wow fade-in-bottom"
-          spiel="Created using <a href='https://kde.org/'>KDE</a>'s <a href='https://kate-editor.org/'>Kate editor</a> on the <a href='https://endeavouros.com/'>EndeavourOS</a> distribution of <a href='https://www.gnu.org/'>GNU</a>/Linux. Set in Deegheest Latitude Regular (by Ange Degheest, Camille Depalle, Eugénie Bidaut, Luna Delabre, Mandy Elbé, May Jolivet, Oriane Charvieux, Benjamin Gomez, and Justine Herbel; distributed by velvetyne.fr) and PT Sans (by Alexandra Korolkova, Olga Umpeleva and Vladimir Yefimov).<br><br>Deegheest Latitude Regular was part of <a href='https://velvetyne.fr/degheest/'>“Reviving Ange Degheest,”</a> an exhibition presenting the work of Ange Degheest, a woman type designer whose work has largely been forgotten.<br><br>Flocking simulation written using <a href='https://p5js.org/'>p5.js</a> based on an implementation by Daniel Shiffman based on the research of Craig Reynolds.<br><br>A special thanks to <a href='https://www.susanryankalinaphoto.com'>Susan Ryan Kalina Photography</a>, and <a href='https://www.browndogpix.com'>Robin Hochstatter</a>. Thanks to the developers behind <a href='https://kde.org/'>KDE</a>'s <a href='https://apps.kde.org/dolphin/'>Dolphin file manager</a>, as well as the <a href='https://converseen.fasterland.net/'>Converseen batch image processor</a>, two best-in-class free and open source tools that were of great help in the making of this report."
+          spiel="Created using <a href='https://kde.org/'>KDE</a>'s <a href='https://kate-editor.org/'>Kate editor</a> on the <a href='https://endeavouros.com/'>EndeavourOS</a> distribution of <a href='https://www.gnu.org/'>GNU</a>/Linux.
+
+          Set in <a href='https://www.oliviaking.com/inclusivesans/feature'>Inclusive Sans</a> by Olivia King, and <a href='https://fonts.google.com/specimen/Playfair+Display+SC'>Playfair Display SC</a> by Claus Eggers Sørensen.
+
+          Special thanks to <a href='https://www.susanryankalinaphoto.com'>Susan Ryan Kalina Photography</a>, and <a href='https://www.browndogpix.com'>Robin Hochstatter</a>. Thanks to the developers behind <a href='https://kde.org/'>KDE</a>'s <a href='https://apps.kde.org/dolphin/'>Dolphin file manager</a>, as well as the <a href='https://converseen.fasterland.net/'>Converseen batch image processor</a>, two best-in-class free and open source tools that were of great help in the making of this report."
         >
         </content-slide>
       </section>
     </article>
+    <script type="module" src="./js/main.js"></script>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="js/particles.js"
+    ></script>
   </body>
 </html>

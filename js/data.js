@@ -42,53 +42,58 @@ export const EPCards = [
 
 // Event data for use by helper.eventGenerator()
 export const events = [
-  { title: "2025 Annual Meeting " },
-  { title: "2025 Women in the Forefront Luncheon" },
-  { title: "A Special Evening at the Field Museum" },
-  { title: "An Evening at the Art Institute " },
-  { title: "An Evening at the Goodman Theater, July 2024" },
-  { title: "An Evening with the Royal Shakespeare Company " },
+  {
+    title:
+      "Off-the-Record Conversation and Command Center Tour with Secure Community Network",
+  },
+  { title: "Emerita Social Gathering Summer Luncheon" },
+  { title: "TCN Book Club | July 2025" },
+  { title: "Private Dinners on July 17, 2025 (4)" },
+  { title: "An Evening with Chicago Shakespeare Theater | Billie Jean" },
+  { title: "Tour of Ball Horticulture Labs and Gardens" },
+  { title: "Historic Apartment Tour at the National Public Housing Museum" },
+  { title: "Moms with Teens Affinity Group" },
+  {
+    title: "Women on Boards | Adaptive Leadership in the Boardroom - September",
+  },
+  { title: "An Evening at Maria Pinto's Boutique" },
+  { title: "Private Dinners on September 10, 2025 (5)" },
+  { title: "Launchpad Women's Senior Leadership Summit" },
+  { title: "AI - Driving Technology Change in Organizations" },
+  {
+    title:
+      "Empowering Perspectives: Insights from Leaders in Investment and Entrepreneurship",
+  },
+  { title: "Emerita Social Gathering Fall Luncheon" },
   { title: "Annual Fall Dinner" },
-  { title: "Arts & Culture and Nonprofit Sector Session Virtual" },
-  { title: "Behind the Scenes Tour of O’Hare International Airport" },
-  {
-    title:
-      "Beyond the News Headlines: Legal Strategies for Navigating Risks under Trump 2.0  Virtual",
-  },
-  { title: "Corporate Sector Session" },
-  { title: "Curate Your Life" },
-  { title: "Dealing with Complex Health and Caregiving Needs" },
-  {
-    title:
-      "Designing Your Next Chapter of Leadership | A Workshop for TCN Members",
-  },
-  { title: "Elevating Women’s Voices" },
-  { title: "Emerita Social Gathering and Anna Rappaport Art Show" },
-  { title: "Financial Services Sector Session" },
-  { title: "GenAI is Here! Now What?" },
-  { title: "Health, Science and Medicine Sector Session" },
-  { title: "Higher Education Sector Session" },
+  { title: "TCN Book Club | October 2025" },
+  { title: "Dealing with Complex Health and Caregiving Needs - October" },
+  { title: "An Evening at Steppenwolf | Amadeus" },
+  { title: "A Holiday Shopping Event at The North Shore Exchange" },
   { title: "Holiday Open House" },
-  { title: "Human Trafficking Panel Discussion" },
-  { title: "Launchpad Women’s Senior Leadership Summit" },
-  { title: "Law and Government Sector Session" },
-  { title: "LinkedIn Executive Training with Purpose Brand" },
-  { title: "Live from the Heart with The Chicago Network" },
-  { title: "Media and Communications Sector Session" },
-  { title: "New Member Breakfast" },
-  { title: "Private Dinners" },
-  { title: "Private Tour of The Conservation Center" },
+  { title: "TCN Book Club | January 2026" },
   {
     title:
-      "Professional Svcs & Associations, Mid-size Private Co. Sector Session",
+      "Woman on Boards | Beyond the Appointment: Excelling and Enduring as a Board Director",
   },
-  { title: "Sip, Savor, & Celebrate: An Evening at Sanctuary with TCN" },
-  { title: "Special Private Dinner at Dana Thompson’s Home" },
-  { title: "TCN Moms with Teens Affinity Group" },
-  { title: "TCN’s Book Club" },
-  { title: "The Role of Trust in the Executive Office and The Board Room" },
-  { title: "Why Can We Not End Hunger in America?" },
-  { title: "Women on Boards | Adaptive Leadership in the Boardroom" },
+  { title: "The Biggest Healthcare Challenges Facing Women Over 50" },
+  { title: "An Evening at Goodman Theatre | Holiday" },
+  { title: "New Member Breakfast" },
+  { title: "An Evening with Hubbard Street Dance Chicago" },
+  { title: "Beyond the Gavel | An Insider's Experience at Freeman's Auction" },
+  { title: "Private Dinners on April 8, 2026 (4)" },
+  { title: "Celebrating Trees and Plant Conservation at The Morton Arboretum" },
+  { title: "Mirval Spa Experience in Tucson" },
+  {
+    title:
+      "AI Executive Leadership Learning with Carnegie Mellon University & Kearney",
+  },
+  { title: "A Purposeful Shopping Event at North Shore Exchange" },
+  {
+    title: "An Inside Look: Women Leading Chicago's Research and Conservation",
+  },
+  { title: "2026 Women in the Forefront Luncheon" },
+  { title: "Annual Meeting" },
 ];
 
 export const WIFLImages = [
