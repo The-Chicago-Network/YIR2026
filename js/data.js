@@ -9,6 +9,7 @@ export const colors = [
 ];
 
 // Card data for use by helper.cardGenerator()
+/*
 export const EPCards = [
   {
     imgUrl: "/images/nathaniel-worrell-RmyH6CinwtM-unsplash.jpg",
@@ -39,7 +40,7 @@ export const EPCards = [
     imgAlt: "A test image",
   },
 ];
-
+*/
 // Event data for use by helper.eventGenerator()
 export const events = [
   {
@@ -110,6 +111,7 @@ export const WIFLImages = [
   { imgUrl: "./images/wifl/14.webp", imgAlt: "" },
   { imgUrl: "./images/wifl/15.webp", imgAlt: "" },
   { imgUrl: "./images/wifl/16.webp", imgAlt: "" },
+  { imgUrl: "./images/wifl/17.webp", imgAlt: "" },
 ];
 
 export const LPImages = [
@@ -128,6 +130,10 @@ export const LPImages = [
   { imgUrl: "./images/launchpad/15.webp", imgAlt: "" },
   { imgUrl: "./images/launchpad/16.webp", imgAlt: "" },
   { imgUrl: "./images/launchpad/17.webp", imgAlt: "" },
+  { imgUrl: "./images/launchpad/18.webp", imgAlt: "" },
+  { imgUrl: "./images/launchpad/19.webp", imgAlt: "" },
+  { imgUrl: "./images/launchpad/20.webp", imgAlt: "" },
+  { imgUrl: "./images/launchpad/21.webp", imgAlt: "" },
 ];
 
 export const annualMeetingImages = [
@@ -155,14 +161,46 @@ export const eventPics = [
   { imgUrl: "./images/events/6.webp", imgAlt: "" },
   { imgUrl: "./images/events/7.webp", imgAlt: "" },
   { imgUrl: "./images/events/8.webp", imgAlt: "" },
+  { imgUrl: "./images/events/9.webp", imgAlt: "" },
+  { imgUrl: "./images/events/10.webp", imgAlt: "" },
+  { imgUrl: "./images/events/11.webp", imgAlt: "" },
   { imgUrl: "./images/events/12.webp", imgAlt: "" },
   { imgUrl: "./images/events/13.webp", imgAlt: "" },
   { imgUrl: "./images/events/14.webp", imgAlt: "" },
   { imgUrl: "./images/events/15.webp", imgAlt: "" },
+  { imgUrl: "./images/events/16.webp", imgAlt: "" },
+  { imgUrl: "./images/events/17.webp", imgAlt: "" },
   { imgUrl: "./images/events/18.webp", imgAlt: "" },
   { imgUrl: "./images/events/19.webp", imgAlt: "" },
   { imgUrl: "./images/events/20.webp", imgAlt: "" },
   { imgUrl: "./images/events/21.webp", imgAlt: "" },
+  { imgUrl: "./images/events/22.webp", imgAlt: "" },
+  { imgUrl: "./images/events/23.webp", imgAlt: "" },
+  { imgUrl: "./images/events/24.webp", imgAlt: "" },
+  { imgUrl: "./images/events/25.webp", imgAlt: "" },
+  { imgUrl: "./images/events/26.webp", imgAlt: "" },
+  { imgUrl: "./images/events/27.webp", imgAlt: "" },
+  { imgUrl: "./images/events/28.webp", imgAlt: "" },
+  { imgUrl: "./images/events/29.webp", imgAlt: "" },
+  { imgUrl: "./images/events/30.webp", imgAlt: "" },
+  { imgUrl: "./images/events/31.webp", imgAlt: "" },
+  { imgUrl: "./images/events/32.webp", imgAlt: "" },
+  { imgUrl: "./images/events/33.webp", imgAlt: "" },
+  { imgUrl: "./images/events/34.webp", imgAlt: "" },
+  { imgUrl: "./images/events/35.webp", imgAlt: "" },
+  { imgUrl: "./images/events/36.webp", imgAlt: "" },
+  { imgUrl: "./images/events/37.webp", imgAlt: "" },
+  { imgUrl: "./images/events/38.webp", imgAlt: "" },
+  { imgUrl: "./images/events/39.webp", imgAlt: "" },
+  { imgUrl: "./images/events/40.webp", imgAlt: "" },
+  { imgUrl: "./images/events/41.webp", imgAlt: "" },
+  { imgUrl: "./images/events/42.webp", imgAlt: "" },
+  { imgUrl: "./images/events/43.webp", imgAlt: "" },
+  { imgUrl: "./images/events/44.webp", imgAlt: "" },
+  { imgUrl: "./images/events/45.webp", imgAlt: "" },
+  { imgUrl: "./images/events/46.webp", imgAlt: "" },
+  { imgUrl: "./images/events/47.webp", imgAlt: "" },
+  { imgUrl: "./images/events/48.webp", imgAlt: "" },
 ];
 
 export const logos = [
