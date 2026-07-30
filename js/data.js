@@ -150,6 +150,7 @@ export const annualMeetingImages = [
   { imgUrl: "./images/annualmeeting/11.webp", imgAlt: "" },
   { imgUrl: "./images/annualmeeting/12.webp", imgAlt: "" },
   { imgUrl: "./images/annualmeeting/13.webp", imgAlt: "" },
+  { imgUrl: "./images/annualmeeting/14.webp", imgAlt: "" },
 ];
 
 export const eventPics = [
