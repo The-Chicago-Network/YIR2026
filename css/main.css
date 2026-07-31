@@ -7,7 +7,7 @@
   src:
     local("Playfair Display SC Bold Italic"),
     local("PlayfairDisplaySC-BoldItalic"),
-    url(./fonts/playfair-display-sc-bold-italic.woff2) format("woff2");
+    url(../fonts/playfair-display-sc-bold-italic.woff2) format("woff2");
 }
 /* playfair-display-sc-bold */
 @font-face {
@@ -18,7 +18,7 @@
   src:
     local("Playfair Display SC Bold"),
     local("PlayfairDisplaySC-Bold"),
-    url(./fonts/playfair-display-sc-bold.woff2) format("woff2");
+    url(../fonts/playfair-display-sc-bold.woff2) format("woff2");
 }
 /* playfair-display-sc-black */
 @font-face {
@@ -29,7 +29,7 @@
   src:
     local("Playfair Display SC Black"),
     local("PlayfairDisplaySC-Black"),
-    url(./fonts/playfair-display-sc-black.woff2) format("woff2");
+    url(../fonts/playfair-display-sc-black.woff2) format("woff2");
 }
 /* playfair-display-sc-italic */
 @font-face {
@@ -40,7 +40,7 @@
   src:
     local("Playfair Display SC Italic"),
     local("PlayfairDisplaySC-Italic"),
-    url(./fonts/playfair-display-sc-italic.woff2) format("woff2");
+    url(../fonts/playfair-display-sc-italic.woff2) format("woff2");
 }
 /* playfair-display-sc */
 @font-face {
@@ -51,7 +51,7 @@
   src:
     local("Playfair Display SC Regular"),
     local("PlayfairDisplaySC-Regular"),
-    url(./fonts/playfair-display-sc.woff2) format("woff2");
+    url(../fonts/playfair-display-sc.woff2) format("woff2");
 }
 /* playfair-display-sc-black-italic */
 @font-face {
@@ -62,7 +62,7 @@
   src:
     local("Playfair Display SC Black Italic"),
     local("PlayfairDisplaySC-BlackItalic"),
-    url(./fonts/playfair-display-sc-black-italic.woff2) format("woff2");
+    url(../fonts/playfair-display-sc-black-italic.woff2) format("woff2");
 }
 
 /* inclusive-sans-semibold-italic */
@@ -74,7 +74,7 @@
   src:
     local("Inclusive Sans SemiBold Italic"),
     local("InclusiveSans-SemiBoldItalic"),
-    url(./fonts/inclusive-sans-semibold-italic.woff2) format("woff2");
+    url(../fonts/inclusive-sans-semibold-italic.woff2) format("woff2");
 }
 /* inclusive-sans-semibold */
 @font-face {
@@ -85,7 +85,7 @@
   src:
     local("Inclusive Sans SemiBold"),
     local("InclusiveSans-SemiBold"),
-    url(./fonts/inclusive-sans-semibold.woff2) format("woff2");
+    url(../fonts/inclusive-sans-semibold.woff2) format("woff2");
 }
 /* inclusive-sans */
 @font-face {
@@ -96,7 +96,7 @@
   src:
     local("Inclusive Sans Regular"),
     local("InclusiveSans-Regular"),
-    url(./fonts/inclusive-sans.woff2) format("woff2");
+    url(../fonts/inclusive-sans.woff2) format("woff2");
 }
 /* inclusive-sans-medium-italic */
 @font-face {
@@ -107,7 +107,7 @@
   src:
     local("Inclusive Sans Medium Italic"),
     local("InclusiveSans-MediumItalic"),
-    url(./fonts/inclusive-sans-medium-italic.woff2) format("woff2");
+    url(../fonts/inclusive-sans-medium-italic.woff2) format("woff2");
 }
 /* inclusive-sans-medium */
 @font-face {
@@ -118,7 +118,7 @@
   src:
     local("Inclusive Sans Medium"),
     local("InclusiveSans-Medium"),
-    url(./fonts/inclusive-sans-medium.woff2) format("woff2");
+    url(../fonts/inclusive-sans-medium.woff2) format("woff2");
 }
 /* inclusive-sans-light-italic */
 @font-face {
@@ -129,7 +129,7 @@
   src:
     local("Inclusive Sans Light Italic"),
     local("InclusiveSans-LightItalic"),
-    url(./fonts/inclusive-sans-light-italic.woff2) format("woff2");
+    url(../fonts/inclusive-sans-light-italic.woff2) format("woff2");
 }
 /* inclusive-sans-light */
 @font-face {
@@ -140,7 +140,7 @@
   src:
     local("Inclusive Sans Light"),
     local("InclusiveSans-Light"),
-    url(./fonts/inclusive-sans-light.woff2) format("woff2");
+    url(../fonts/inclusive-sans-light.woff2) format("woff2");
 }
 /* inclusive-sans-italic */
 @font-face {
@@ -151,7 +151,7 @@
   src:
     local("Inclusive Sans Italic"),
     local("InclusiveSans-Italic"),
-    url(./fonts/inclusive-sans-italic.woff2) format("woff2");
+    url(../fonts/inclusive-sans-italic.woff2) format("woff2");
 }
 /* inclusive-sans-bold-italic */
 @font-face {
@@ -162,7 +162,7 @@
   src:
     local("Inclusive Sans Bold Italic"),
     local("InclusiveSans-BoldItalic"),
-    url(./fonts/inclusive-sans-bold-italic.woff2) format("woff2");
+    url(../fonts/inclusive-sans-bold-italic.woff2) format("woff2");
 }
 /* inclusive-sans-bold */
 @font-face {
@@ -173,7 +173,7 @@
   src:
     local("Inclusive Sans Bold"),
     local("InclusiveSans-Bold"),
-    url(./fonts/inclusive-sans-bold.woff2) format("woff2");
+    url(../fonts/inclusive-sans-bold.woff2) format("woff2");
 }
 
 :root {
