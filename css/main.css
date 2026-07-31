@@ -611,13 +611,6 @@ tcn-press::part(title) {
   height: 5rem;
 }
 
-@media screen and (max-width: 1000px) {
-  .boardPic {
-    width: 7rem;
-    height: 7rem;
-  }
-}
-
 .text-focus-in {
   -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.2s
     both;
@@ -655,11 +648,7 @@ h2 {
   align-content: center;
   justify-content: center;
 }
-/*
-#introduction {
-   padding-top: 4rem;
-}
-*/
+
 .logoCard {
   display: inline-block;
   margin: 0.5rem;
@@ -688,22 +677,8 @@ h2 {
   clip-path: polygon(50% 0, 90% 25%, 90% 75%, 50% 100%, 10% 75%, 10% 25%);
 }
 
-@media screen and (max-width: 1000px) {
-  .mugshot {
-    width: 10rem;
-    height: 10rem;
-    align-self: center;
-  }
-}
-
 .mugshot img {
   width: 10rem;
-}
-
-@media screen and (max-width: 1000px) {
-  .mugshot img {
-    width: 10rem;
-  }
 }
 
 .memberList {
@@ -725,14 +700,6 @@ h2 {
   display: block;
   break-inside: avoid-column;
 }
-
-@media screen and (max-width: 1000px) {
-  .memberList {
-    flex-flow: column nowrap;
-    justify-content: center;
-  }
-}
-
 .memberList p {
   font-size: 0.8rem;
   line-height: 1rem;
@@ -786,17 +753,6 @@ nav #navlinks a button:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1000px) {
-  nav #navlinks {
-    display: none;
-  }
-
-  #navlogo {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .objectField {
   display: flex;
   flex-flow: row wrap;
@@ -815,13 +771,6 @@ ol {
   z-index: 1;
 }
 
-@media screen and (max-width: 1000px) {
-  ol {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-}
-
 p {
   font-family: var(--pFontFamily);
   font-weight: var(--pFontWeight);
@@ -833,22 +782,9 @@ p {
   color: var(--default-font-color);
 }
 
-@media screen and (max-width: 1000px) {
-  p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-}
-
 .siggies {
   display: flex;
   flex-flow: row nowrap;
-}
-
-@media screen and (max-width: 600px) {
-  .siggies {
-    flex-flow: row wrap;
-  }
 }
 
 .signatureContainer {
@@ -862,19 +798,6 @@ p {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 1000px) {
-  .staffList {
-    flex-flow: column nowrap;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .staffList p {
-    font-size: 3rem;
-  }
-}
-
 .staffList .staffContainer {
   width: 10rem;
   margin: 1rem;
@@ -883,17 +806,6 @@ p {
 .staffContainer p {
   font-size: 1rem;
   line-height: 1.25;
-}
-
-@media screen and (max-width: 1000px) {
-  .staffList .staffContainer {
-    width: 100%;
-    font-size: 3rem;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    text-align: center;
-  }
 }
 
 .staffList .staffContainer a {
@@ -1003,12 +915,79 @@ table td:nth-child(2) {
   max-width: 9rem;
 }
 
-@media screen and (max-width: 1000px) {
+table td.color-bar {
+  padding-left: 0.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .boardPic {
+    width: 7rem;
+    height: 7rem;
+  }
+  .galleryPic {
+    height: inherit;
+    .imageContainer {
+      height: 20rem;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      & img {
+        height: 20rem;
+      }
+    }
+  }
+  .memberList {
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+  .mugshot {
+    width: 10rem;
+    height: 10rem;
+    align-self: center;
+    & img {
+      width: 10rem;
+    }
+  }
+  nav #navlinks {
+    display: none;
+  }
+  #navlogo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  ol {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .staffList {
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+  .staffList .staffContainer {
+    width: 100%;
+    font-size: 3rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+  }
   table td:nth-child(2) {
     max-width: 50%;
   }
+  .titleContainer > h1.mainTitle {
+    font-size: 3rem;
+  }
 }
 
-table td.color-bar {
-  padding-left: 0.5rem;
+@media screen and (max-width: 600px) {
+  .siggies {
+    flex-flow: row wrap;
+  }
+  .titleContainer > h1.mainTitle {
+    font-size: 2rem;
+  }
 }

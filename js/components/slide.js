@@ -1,4 +1,4 @@
- const template = document.createElement('template');
+const template = document.createElement("template");
 
 template.innerHTML = `
   <style>
@@ -29,6 +29,13 @@ template.innerHTML = `
           margin-bottom: 4rem;
           line-height: 4rem;
         }
+        .slideContainer {
+          background-color: var(--slideImageBG);
+          width: 100vw;
+          height: 50vh;
+          /* padding: 5rem;*/
+          background-size: cover;
+        }
       }
   </style>
 
@@ -45,15 +52,15 @@ class Slide extends HTMLElement {
     super();
 
     // Set up shadow root to isolate instance
-    this._shadowRoot = this.attachShadow({ mode: 'open' });
+    this._shadowRoot = this.attachShadow({ mode: "open" });
     this._shadowRoot.appendChild(template.content.cloneNode(true));
 
-    this.$slide = this._shadowRoot.querySelector('.slideContainer');
+    this.$slide = this._shadowRoot.querySelector(".slideContainer");
   }
 
   // Get attributes passed through HTML
   static get observedAttributes() {
-    return ['title','image','altText','background'];
+    return ["title", "image", "altText", "background"];
   }
 
   // Re-render on change
@@ -66,12 +73,16 @@ class Slide extends HTMLElement {
 
   // Insert attribute values from HTML in render
   render() {
-   this.title ? this.$slide.querySelector('.innerSlide h2').innerHTML = this.title : null;
-   this.background ? this.$slide.style.background = this.background : null;
-   this.image ? this.$slide.style.background = `url("${this.image}") no-repeat top center` : null;
-   this.image ? this.$slide.style.backgroundSize = `cover` : null;
+    this.title
+      ? (this.$slide.querySelector(".innerSlide h2").innerHTML = this.title)
+      : null;
+    this.background ? (this.$slide.style.background = this.background) : null;
+    this.image
+      ? (this.$slide.style.background = `url("${this.image}") no-repeat top center`)
+      : null;
+    this.image ? (this.$slide.style.backgroundSize = `cover`) : null;
   }
 }
 
 // Define custom element
-window.customElements.define('transition-slide', Slide);
+window.customElements.define("transition-slide", Slide);
