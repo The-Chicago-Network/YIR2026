@@ -47,7 +47,7 @@ export const events = [
     title:
       "Off-the-Record Conversation and Command Center Tour with Secure Community Network",
   },
-  { title: "Emerita Social Gathering Summer Luncheon" },
+  { title: "Bastille Day Summer Social Luncheon" },
   { title: "TCN Book Club | July 2025" },
   { title: "Private Dinners on July 17, 2025 (4)" },
   { title: "An Evening with Chicago Shakespeare Theater | Billie Jean" },
