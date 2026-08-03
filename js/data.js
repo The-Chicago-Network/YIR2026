@@ -111,7 +111,6 @@ export const WIFLImages = [
   { imgUrl: "./images/wifl/14.webp", imgAlt: "" },
   { imgUrl: "./images/wifl/15.webp", imgAlt: "" },
   { imgUrl: "./images/wifl/16.webp", imgAlt: "" },
-  { imgUrl: "./images/wifl/17.webp", imgAlt: "" },
 ];
 
 export const LPImages = [
@@ -150,7 +149,6 @@ export const annualMeetingImages = [
   { imgUrl: "./images/annualmeeting/11.webp", imgAlt: "" },
   { imgUrl: "./images/annualmeeting/12.webp", imgAlt: "" },
   { imgUrl: "./images/annualmeeting/13.webp", imgAlt: "" },
-  { imgUrl: "./images/annualmeeting/14.webp", imgAlt: "" },
 ];
 
 export const eventPics = [
@@ -199,9 +197,6 @@ export const eventPics = [
   { imgUrl: "./images/events/43.webp", imgAlt: "" },
   { imgUrl: "./images/events/44.webp", imgAlt: "" },
   { imgUrl: "./images/events/45.webp", imgAlt: "" },
-  { imgUrl: "./images/events/46.webp", imgAlt: "" },
-  { imgUrl: "./images/events/47.webp", imgAlt: "" },
-  { imgUrl: "./images/events/48.webp", imgAlt: "" },
 ];
 
 export const logos = [
